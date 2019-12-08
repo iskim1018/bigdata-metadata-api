@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<success>
+    <statusCode>200</statusCode>
+    <message>요청하신 내용이 정상적으로 처리되었습니다.</message>
+</success>

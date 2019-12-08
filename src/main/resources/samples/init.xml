@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:dct="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:vcard="http://www.w3.org/2006/vcard/ns#">
+    <dcat:Dataset rdf:resource="http://www.konantech.com">
+        <dct:accessRights>public</dct:accessRights>
+        <dcat:contactPoint>
+            <vcard:Individual>
+                <vcard:fn>홍길동</vcard:fn>
+                <vcard:hasEmail rdf:resource="mailto:hong@koti.re.kr" />
+                <vcard:hasTelephone rdf:resource="tel:02-1234-5678" />
+            </vcard:Individual>
+        </dcat:contactPoint>
+        <dct:creator>
+            <foaf:Organization>
+                <foaf:homepage rdf:resource="https://data.some.org/the/actual/catalog" />
+                <foaf:name>Publishing Organization for dataset 1</foaf:name>
+                <foaf:mbox>contact@some.org</foaf:mbox>
+                <foaf:phone>02-123-1234</foaf:phone>
+            </foaf:Organization>
+        </dct:creator>
+        <dct:description>During the period 1982-86 a team of geologists from the British Geological Survey ...</dct:description>
+        <dct:title>Zimbabwe Regional Geochemical Survey.</dct:title>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-06-21</dct:issued>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-06-21</dct:modified>
+        <dct:language rdf:resource="http://id.loc.gov/vocabulary/iso639-1/ko" />
+        <dct:publisher>
+            <foaf:Organization>
+                <foaf:homepage rdf:resource="https://data.some.org/the/actual/catalog" />
+                <foaf:name>Publishing Organization for dataset 1</foaf:name>
+                <foaf:mbox>contact@some.org</foaf:mbox>
+                <foaf:phone>02-123-1234</foaf:phone>
+            </foaf:Organization>
+        </dct:publisher>
+        <dct:identifier>9df8df51-63db-37a8-e044-0003ba9b0d91</dct:identifier>
+        <dcat:theme>Earth Sciences</dcat:theme>
+        <dct:type>dataset</dct:type>
+        <dcat:keyword>exploration</dcat:keyword>
+        <dcat:keyword>탐사</dcat:keyword>
+        <dcat:landingPage rdf:resource="http://dataset.info.org" />
+        <dct:license>Creative Commons Attribution</dct:license>
+        <dct:rights>Copyrigh ...</dct:rights>
+        <dcat:distribution>
+            <dcat:Distribution rdf:about="https://data.some.org/catalog/datasets/9df8df51-63db-37a8-e044-0003ba9b0d98/1">
+                <dcat:accessService>9df8df51-63db-37a8-e044-0003ba9b0d98</dcat:accessService>
+                <dcat:accessURL rdf:resource="http://www.bgs.ac.uk/gbase/geochemcd/home.html" />
+                <dcat:byteSize>12323</dcat:byteSize>
+                <dcat:compressFormat>zip</dcat:compressFormat>
+                <dcat:downloadURL rdf:resource="http://www.example.org/files/001.csv" />
+                <dcat:mediaType>text/csv</dcat:mediaType>
+                <dcat:packageFormat>tar</dcat:packageFormat>
+                <dcat:spatialResolutionInMeters>30.0</dcat:spatialResolutionInMeters>
+                <dcat:temporalResolution>1일</dcat:temporalResolution>
+                <dct:accessRights>public</dct:accessRights>
+                <dct:description>During the period 1982-86 a team of geologists from the British Geological Survey ...</dct:description>
+                <dct:format>text/plain</dct:format>
+                <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-06-21</dct:issued>
+                <dct:license>Creative Commons Attribution</dct:license>
+                <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-06-21</dct:modified>
+                <dct:rights>Copyrigh ...</dct:rights>
+                <dct:title>Zimbabwe Regional Geochemical Survey.</dct:title>
+                <version>1.0</version>
+                <versionDescription>
+                    초기버전입니다.
+                </versionDescription>
+                <priceInfo>...</priceInfo>
+                <qualityInfo>...</qualityInfo>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:spatialResolutionInMeters>30.0</dcat:spatialResolutionInMeters>
+        <dcat:temporalResolution>1일</dcat:temporalResolution>
+        <dct:accrualPeriodicity>1개월</dct:accrualPeriodicity>
+        <dct:spatial>
+            120749.725 487589.422 , 120752.55 487594.375,
+            120751.227 487595.129 , 120732.539 487605.788
+        </dct:spatial>
+        <dct:temporal>
+            temporal_start:2109-10-11,
+            temporal_end:2019-12-25
+        </dct:temporal>
+        <version>1.0</version>
+        <versionDescription>
+            초기버전입니다.
+        </versionDescription>
+        <priceInfo>...</priceInfo>
+        <qualityInfo>...</qualityInfo>
+    </dcat:Dataset>
+
+    <dcat:Dataset rdf:resource="http://www.konantech.com">
+        <dct:accessRights>public</dct:accessRights>
+        <dcat:contactPoint>
+            <vcard:Individual>
+                <vcard:fn>홍길동</vcard:fn>
+                <vcard:hasEmail rdf:resource="mailto:hong@koti.re.kr" />
+                <vcard:hasTelephone rdf:resource="tel:02-1234-5678" />
+            </vcard:Individual>
+        </dcat:contactPoint>
+        <dct:creator>
+            <foaf:Organization>
+                <foaf:homepage rdf:resource="https://data.some.org/the/actual/catalog" />
+                <foaf:name>Publishing Organization for dataset 1</foaf:name>
+                <foaf:mbox>contact@some.org</foaf:mbox>
+                <foaf:phone>02-123-1234</foaf:phone>
+            </foaf:Organization>
+        </dct:creator>
+        <dct:description>During the period 1982-86 a team of geologists from the British Geological Survey ...</dct:description>
+        <dct:title>Zimbabwe Regional Geochemical Survey.</dct:title>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-06-21</dct:issued>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-06-21</dct:modified>
+        <dct:language rdf:resource="http://id.loc.gov/vocabulary/iso639-1/ko" />
+        <dct:publisher>
+            <foaf:Organization>
+                <foaf:homepage rdf:resource="https://data.some.org/the/actual/catalog" />
+                <foaf:name>Publishing Organization for dataset 1</foaf:name>
+                <foaf:mbox>contact@some.org</foaf:mbox>
+                <foaf:phone>02-123-1234</foaf:phone>
+            </foaf:Organization>
+        </dct:publisher>
+        <dct:identifier>9df8df51-63db-37a8-e044-0003ba9b0d98</dct:identifier>
+        <dcat:theme>Earth Sciences</dcat:theme>
+        <dct:type>dataset</dct:type>
+        <dcat:keyword>exploration</dcat:keyword>
+        <dcat:keyword>탐사</dcat:keyword>
+        <dcat:landingPage rdf:resource="http://dataset.info.org" />
+        <dct:license>Creative Commons Attribution</dct:license>
+        <dct:rights>Copyrigh ...</dct:rights>
+        <dcat:distribution>
+            <dcat:Distribution rdf:about="https://data.some.org/catalog/datasets/9df8df51-63db-37a8-e044-0003ba9b0d98/1">
+                <dcat:accessService>9df8df51-63db-37a8-e044-0003ba9b0d98</dcat:accessService>
+                <dcat:accessURL rdf:resource="http://www.bgs.ac.uk/gbase/geochemcd/home.html" />
+                <dcat:byteSize>12323</dcat:byteSize>
+                <dcat:compressFormat>zip</dcat:compressFormat>
+                <dcat:downloadURL rdf:resource="http://www.example.org/files/001.csv" />
+                <dcat:mediaType>text/csv</dcat:mediaType>
+                <dcat:packageFormat>tar</dcat:packageFormat>
+                <dcat:spatialResolutionInMeters>30.0</dcat:spatialResolutionInMeters>
+                <dcat:temporalResolution>1일</dcat:temporalResolution>
+                <dct:accessRights>public</dct:accessRights>
+                <dct:description>During the period 1982-86 a team of geologists from the British Geological Survey ...</dct:description>
+                <dct:format>text/plain</dct:format>
+                <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-06-21</dct:issued>
+                <dct:license>Creative Commons Attribution</dct:license>
+                <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-06-21</dct:modified>
+                <dct:rights>Copyrigh ...</dct:rights>
+                <dct:title>Zimbabwe Regional Geochemical Survey.</dct:title>
+                <version>1.0</version>
+                <versionDescription>
+                    초기버전입니다.
+                </versionDescription>
+                <priceInfo>...</priceInfo>
+                <qualityInfo>...</qualityInfo>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:spatialResolutionInMeters>30.0</dcat:spatialResolutionInMeters>
+        <dcat:temporalResolution>1일</dcat:temporalResolution>
+        <dct:accrualPeriodicity>1개월</dct:accrualPeriodicity>
+        <dct:spatial>
+            120749.725 487589.422 , 120752.55 487594.375,
+            120751.227 487595.129 , 120732.539 487605.788
+        </dct:spatial>
+        <dct:temporal>
+            temporal_start:2109-10-11,
+            temporal_end:2019-12-25
+        </dct:temporal>
+        <version>1.0</version>
+        <versionDescription>
+            초기버전입니다.
+        </versionDescription>
+        <priceInfo>...</priceInfo>
+        <qualityInfo>...</qualityInfo>
+    </dcat:Dataset>
+
+    <dcat:DataService>
+        <dct:accessRights>public</dct:accessRights>
+        <dcat:contactPoint>
+            <vcard:Individual>
+                <vcard:fn>홍길동</vcard:fn>
+                <vcard:hasEmail rdf:resource="mailto:hong@koti.re.kr" />
+                <vcard:hasTelephone rdf:resource="tel:02-1234-5678" />
+            </vcard:Individual>
+        </dcat:contactPoint>
+        <dct:creator>
+            <foaf:Organization>
+                <foaf:homepage rdf:resource="https://data.some.org/the/actual/catalog" />
+                <foaf:name>Publishing Organization for dataset 1</foaf:name>
+                <foaf:mbox>contact@some.org</foaf:mbox>
+                <foaf:phone>02-123-1234</foaf:phone>
+            </foaf:Organization>
+        </dct:creator>
+        <dct:description>During the period 1982-86 a team of geologists from the British Geological Survey ...</dct:description>
+        <dct:title>Zimbabwe Regional Geochemical Survey.</dct:title>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-06-21</dct:issued>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-06-21</dct:modified>
+        <dct:language rdf:resource="http://id.loc.gov/vocabulary/iso639-1/ko" />
+        <dct:publisher>
+            <foaf:Organization>
+                <foaf:homepage rdf:resource="https://data.some.org/the/actual/catalog" />
+                <foaf:name>Publishing Organization for dataset 1</foaf:name>
+                <foaf:mbox>contact@some.org</foaf:mbox>
+                <foaf:phone>02-123-1234</foaf:phone>
+            </foaf:Organization>
+        </dct:publisher>
+        <dct:identifier>9df8df51-63db-37a8-e044-0003ba9b0d93</dct:identifier>
+        <dcat:theme>Earth Sciences</dcat:theme>
+        <dct:type>dataset</dct:type>
+        <dcat:keyword>exploration</dcat:keyword>
+        <dcat:keyword>탐사</dcat:keyword>
+        <dcat:landingPage rdf:resource="http://dataset.info.org" />
+        <dct:license>Creative Commons Attribution</dct:license>
+        <dct:rights>Copyrigh ...</dct:rights>
+        <dcat:endpointURL rdf:resource="http://vocabs.ands.org.au/repository/api/sparql" />
+        <dcat:endpointDescription>
+            2019년 날씨 정보를 제공하는 api 입니다.
+        </dcat:endpointDescription>
+        <dcat:servesDataset>
+            9df8df51-63db-37a8-e044-0003ba9b0d98,9df8df51-63db-37a8-e044-0003ba9b0d99
+        </dcat:servesDataset>
+        <version>1.0</version>
+        <versionDescription>
+            초기버전입니다.
+        </versionDescription>
+        <priceInfo>...</priceInfo>
+        <qualityInfo>...</qualityInfo>
+    </dcat:DataService>
+</rdf:RDF>

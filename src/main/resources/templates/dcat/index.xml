@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:th="http://www.thymeleaf.org" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:dct="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:vcard="http://www.w3.org/2006/vcard/ns#">
+    <dcat:Dataset th:each="dataset : ${platform.datasets}">
+        <dct:accessRights th:text="${#strings.defaultString(dataset.accessRights, 'public')}"></dct:accessRights>
+        <dcat:contactPoint th:if="${dataset.contactPoint != null}">
+            <vcard:Individual>
+                <vcard:fn th:text="${dataset.contactPoint.name}"/>
+                <vcard:hasEmail th:attr="'rdf:resource'=${'mailto:' + dataset.contactPoint.email}" />
+                <vcard:hasTelephone th:attr="'rdf:resource'=${'tel:' + dataset.contactPoint.phone}" />
+            </vcard:Individual>
+        </dcat:contactPoint>
+        <dct:creator th:if="${dataset.creator != null}">
+            <foaf:Organization>
+                <foaf:name th:text="${dataset.creator.name}" />
+                <foaf:homepage th:attr="'rdf:resource'=${dataset.creator.homepage}" />
+                <foaf:mbox th:text="${dataset.creator.email}" />
+                <foaf:phone th:text="${dataset.creator.phone}" />
+            </foaf:Organization>
+        </dct:creator>
+        <dct:description th:text="${dataset.description}"></dct:description>
+        <dct:title th:text="${dataset.title}"></dct:title>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date" th:text="${dataset.issued}"></dct:issued>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date" th:text="${dataset.modified}"></dct:modified>
+        <dct:language th:attr="'rdf:resource'=${'http://id.loc.gov/vocabulary/iso639-1/' + #strings.defaultString(dataset.language,'ko')}"></dct:language>
+        <dct:publisher th:if="${dataset.publisher != null}">
+            <foaf:Organization>
+                <foaf:name th:text="${dataset.publisher.name}"/>
+                <foaf:homepage th:attr="'rdf:resource'=${dataset.publisher.homepage}" />
+                <foaf:mbox th:text="${dataset.publisher.email}"/>
+                <foaf:phone th:text="${dataset.publisher.phone}"/>
+            </foaf:Organization>
+        </dct:publisher>
+        <dct:identifier th:text="${dataset.identifier}"></dct:identifier>
+        <dcat:theme th:text="${dataset.theme}" />
+        <dct:type>dataset</dct:type>
+        <dcat:keyword th:each="keyword : ${dataset.keywords}" th:text="${keyword}"></dcat:keyword>
+        <dcat:landingPage th:attr="'rdf:resource'=${dataset.landingPage}" />
+        <dct:license th:text="${dataset.license}" />
+        <dct:rights th:text="${dataset.rights}" />
+        <dcat:spatialResolutionInMeters th:text="${dataset.spatialResolutionInMeters}" />
+        <dcat:temporalResolution th:text="${dataset.temporalResolution}" />
+        <dct:accrualPeriodicity th:text="${dataset.accrualPeriodicity}" />
+        <dct:spatial th:text="${dataset.spatial}" />
+        <dct:temporal th:text="${dataset.temporal}" />
+        <version th:text="${dataset.version}" />
+        <versionDescription th:text="${dataset.versionDescription}" />
+        <priceInfo th:text="${dataset.priceInfo}" />
+        <qualityInfo th:text="${dataset.qualityInfo}" />
+        <dcat:distribution>
+            <dcat:Distribution th:each="fd : ${dataset.fileData}">
+                <dcat:accessService th:text="${fd.accessService}" />
+                <dct:accessURL th:attr="'rdf:resource'=${fd.accessUrl}" />
+                <dcat:byteSize th:text="${fd.byteSize}" />
+                <dcat:compressFormat th:text="${fd.compressFormat}" />
+                <dcat:downloadURL th:attr="'rdf:resource'=${fd.downloadUrl}" />
+                <th:block th:if="${not #strings.isEmpty(fd.mediaType)}">
+                    <dcat:mediaType th:text="${fd.mediaType}" />
+                </th:block>
+                <th:block th:if="${not #strings.isEmpty(fd.packageFormat)}">
+                    <dcat:packageFormat th:text="${fd.packageFormat}" />
+                </th:block>
+                <dcat:spatialResolutionInMeters th:text="${fd.spatialResolutionInMeters}" />
+                <dcat:temporalResolution th:text="${fd.temporalResolution}" />
+                <dcat:accessRights th:text="${fd.accessRights}" />
+                <dcat:description th:text="${fd.description}" />
+                <dcat:format th:text="${fd.format}" />
+                <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date" th:text="${fd.issued}"></dct:issued>
+                <dcat:license th:text="${fd.license}" />
+                <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date" th:text="${fd.modified}"></dct:modified>
+                <dcat:rights th:text="${fd.rights}" />
+                <dcat:title th:text="${fd.title}" />
+                <version th:text="${fd.version}" />
+                <versionDescription th:text="${fd.versionDescription}" />
+                <priceInfo th:text="${fd.priceInfo}" />
+                <qualityInfo th:text="${fd.qualityInfo}" />
+            </dcat:Distribution>
+        </dcat:distribution>
+    </dcat:Dataset>
+
+    <dcat:DataService th:each="dataservice : ${platform.apiData}">
+        <dct:accessRights th:text="${#strings.defaultString(dataservice.accessRights, 'public')}"></dct:accessRights>
+        <dcat:contactPoint th:if="${dataservice.contactPoint != null}">
+            <vcard:Individual>
+                <vcard:fn th:text="${dataservice.contactPoint.name}"/>
+                <vcard:hasEmail th:attr="'rdf:resource'=${'mailto:' + dataservice.contactPoint.email}" />
+                <vcard:hasTelephone th:attr="'rdf:resource'=${'tel:' + dataservice.contactPoint.phone}" />
+            </vcard:Individual>
+        </dcat:contactPoint>
+        <dct:creator th:if="${dataservice.creator != null}">
+            <foaf:Organization>
+                <foaf:name th:text="${dataservice.creator.name}" />
+                <foaf:homepage th:attr="'rdf:resource'=${dataservice.creator.homepage}" />
+                <foaf:mbox th:text="${dataservice.creator.email}" />
+                <foaf:phone th:text="${dataservice.creator.phone}" />
+            </foaf:Organization>
+        </dct:creator>
+        <dct:description th:text="${dataservice.description}"></dct:description>
+        <dct:title th:text="${dataservice.title}"></dct:title>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date" th:text="${dataservice.issued}"></dct:issued>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date" th:text="${dataservice.modified}"></dct:modified>
+        <dct:language th:attr="'rdf:resource'=${'http://id.loc.gov/vocabulary/iso639-1/' + #strings.defaultString(dataservice.language,'ko')}"></dct:language>
+        <dct:publisher th:if="${dataservice.publisher != null}">
+            <foaf:Organization>
+                <foaf:name th:text="${dataservice.publisher.name}"/>
+                <foaf:homepage th:attr="'rdf:resource'=${dataservice.publisher.homepage}" />
+                <foaf:mbox th:text="${dataservice.publisher.email}"/>
+                <foaf:phone th:text="${dataservice.publisher.phone}"/>
+            </foaf:Organization>
+        </dct:publisher>
+        <dct:identifier th:text="${dataservice.identifier}"></dct:identifier>
+        <dcat:theme th:text="${dataservice.theme}" />
+        <dct:type>dataservice</dct:type>
+        <dcat:keyword th:each="keyword : ${dataservice.keywords}" th:text="${keyword}"></dcat:keyword>
+        <dcat:landingPage th:attr="'rdf:resource'=${dataservice.landingPage}" />
+        <dct:license th:text="${dataservice.license}" />
+        <dct:rights th:text="${dataservice.rights}" />
+        <dcat:endpointURL th:attr="'rdf:resource'=${dataservice.endpointUrl}" />
+        <dcat:endpointDescription th:text="${dataservice.endpointDesc}" />
+        <dcat:servesDataset th:text="${dataservice.servesDataset}" />
+
+        <version th:text="${dataservice.version}" />
+        <versionDescription th:text="${dataservice.versionDescription}" />
+        <priceInfo th:text="${dataservice.priceInfo}" />
+        <qualityInfo th:text="${dataservice.qualityInfo}" />
+    </dcat:DataService>
+</rdf:RDF>

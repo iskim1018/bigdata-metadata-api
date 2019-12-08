@@ -1,0 +1,29 @@
+logging:
+  level:
+    org.springframework: INFO
+    kr.or.promptech.datamap: DEBUG
+
+spring:
+  profiles:
+    active: dev
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/DATABASE_NAME?characterEncoding=UTF-8&serverTimezone=UTC
+    username: USERNAME
+    password: PASSWORD
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    hibernate:
+      ddl-auto: validate
+      naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
+    generate-ddl: true
+    show-sql: true
+    properties:
+      hibernate:
+        globally_quoted_identifiers: true
+  thymeleaf:
+    cache: false
+    check-template: true
+    check-template-location: true
+    enabled: true
+    encoding: UTF-8

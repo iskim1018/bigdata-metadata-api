@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<error>
+    <statusCode>401</statusCode>
+    <message>인증키가 유효하지 않습니다.</message>
+</error>
